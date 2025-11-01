@@ -1,4 +1,3 @@
-// popup.js — final, stable
 document.addEventListener("DOMContentLoaded", () => {
   const bootScreen = document.getElementById("bootScreen");
   const appContainer = document.getElementById("appContainer");
@@ -50,10 +49,7 @@ function initStacy() {
   // Operation mode
   let stacyMode = "active";
 
-  // === API KEY: put your OpenRouter/OpenAI key here if you want real AI responses.
-  // If left as null, the code will use a fast local mock (for testing).
-  const OPENROUTER_KEY ="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"; // <-- REPLACE null with "sk-..." if you want live responses
-
+  const OPENROUTER_KEY ="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";
   // Helper: append message bubble
   function addMessage(text, sender = "stacy") {
     const msg = document.createElement("div");
@@ -163,3 +159,4 @@ function initStacy() {
       .replace(/'/g,"&#039;");
   }
 }
+
