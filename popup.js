@@ -49,7 +49,7 @@ function initStacy() {
   // Operation mode
   let stacyMode = "active";
 
-  const apiKey = ""; // removed for security
+  const apiKey = "k-or-v1-2d9796fbe04a716d16e55eaa124cf38fd7d245b2b66e696eea3fe67ba2b5eb95"; // removed for security
   
   // Helper: append message bubble
   function addMessage(text, sender = "stacy") {
@@ -160,5 +160,6 @@ function initStacy() {
       .replace(/'/g,"&#039;");
   }
 }
+
 
 
