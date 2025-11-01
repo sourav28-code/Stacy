@@ -1,0 +1,139 @@
+/* Fixes the popup size properly for Chrome */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 360px;
+  height: 600px;
+  overflow: hidden;
+  background: #000;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Popup Container */
+#popup-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 12px;
+  box-shadow: 0 0 25px rgba(255, 0, 255, 0.25);
+  background: linear-gradient(180deg, #0b0b0b, #101010);
+  overflow: hidden;
+}
+
+/* Title */
+.title {
+  text-align: center;
+  color: #a020f0;
+  margin: 10px 0;
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.icon {
+  font-size: 18px;
+}
+
+/* Mode Button */
+.mode-toggle {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+#modeButton {
+  width: 90%;
+  border: none;
+  border-radius: 20px;
+  background: linear-gradient(90deg, #00c6ff, #0072ff);
+  color: white;
+  font-weight: 500;
+  padding: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#modeButton:hover {
+  filter: brightness(1.2);
+}
+
+/* Chat Box */
+#chat-box {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  margin: 0 10px;
+  scroll-behavior: smooth;
+}
+
+.message {
+  padding: 10px 14px;
+  border-radius: 10px;
+  max-width: 80%;
+  word-wrap: break-word;
+  animation: fadeIn 0.3s ease;
+}
+
+.stacy-message {
+  background: linear-gradient(135deg, #0072ff, #00c6ff);
+  color: #fff;
+  align-self: flex-start;
+}
+
+/* Input Area */
+#input-area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #0f0f0f;
+  border-top: 1px solid #222;
+  padding: 8px;
+}
+
+#user-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: #111;
+  color: #eee;
+  border-radius: 20px;
+  padding: 8px 12px;
+  margin-right: 8px;
+  font-size: 14px;
+}
+
+#send-button {
+  background: linear-gradient(90deg, #ff00ff, #ff1493);
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 14px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+#send-button:hover {
+  filter: brightness(1.2);
+}
+
+/* Scrollbar Style */
+#chat-box::-webkit-scrollbar {
+  width: 5px;
+}
+#chat-box::-webkit-scrollbar-thumb {
+  background: #ff00ff;
+  border-radius: 10px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(5px); }
+  to { opacity: 1; transform: translateY(0); }
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Stacy AI</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- BOOT SCREEN -->
+  <div id="bootScreen" class="boot-screen">
+    <div class="boot-center">
+      <div class="stark-logo">S T Λ C Y</div>
+
+      <div class="boot-lines">
+        <div class="boot-line">SYSTEM: STACY AI CORE v1.0</div>
+        <div class="boot-line">INIT: Neural core — INITIALIZING</div>
+        <div class="boot-line">SECURE CHANNEL: Establishing...</div>
+        <div class="boot-line">UI: Loading shaders & HUD...</div>
+      </div>
+
+      <div class="boot-progress">
+        <div class="bar"><div class="bar-fill" id="barFill"></div></div>
+        <div class="boot-msg">Welcome back, Sir — powering up.</div>
+      </div>
+
+      <div class="boot-overlay"></div>
+    </div>
+  </div>
+
+  <!-- MAIN UI -->
+  <div id="appContainer" class="main-ui hidden">
+    <div class="header">
+      <div class="title">
+        <div class="logo-badge"></div>
+        <div class="title-text">STACY AI TERMINAL</div>
+      </div>
+      <button id="modeToggle" class="mode-toggle">Active Mode</button>
+    </div>
+
+    <div id="chatContainer" class="chat-container">
+      <div class="message stacy"><b>Stacy:</b> Systems online. How can I assist, Sir?</div>
+    </div>
+
+    <div class="input-area">
+      <input id="userInput" type="text" placeholder="Ask Stacy something..." autocomplete="off"/>
+      <button id="sendBtn" class="send-btn">Send</button>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
+
