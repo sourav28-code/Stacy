@@ -76,7 +76,7 @@ function initStacy() {
 
     // Real API path (OpenRouter-compatible)
     try {
-      const res = await fetch("https://openrouter.ai/api/v1/chat/completions", {
+      const res = await fetch("https://stacy-ai.vercel.app/api/stacy", {
         method: "POST",
         headers: {
           "Authorization": `Bearer ${OPENROUTER_KEY}`,
@@ -160,6 +160,7 @@ function initStacy() {
       .replace(/'/g,"&#039;");
   }
 }
+
 
 
 
